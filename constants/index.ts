@@ -1,6 +1,3 @@
-import { FiInbox } from "react-icons/fi";
-import { IconType } from "react-icons/lib";
-
 export const navLinks = [
   {
     label: "Mail",
@@ -40,57 +37,57 @@ export const navMailLinks = [
   {
     label: "Inbox",
     route: "/mail",
-    imgUrl: "/icons/inbox.svg",
+    imgUrl: "/icons/inbox.png",
   },
   {
     label: "Drafts",
     route: "/mail",
-    imgUrl: "/icons/draft.svg",
+    imgUrl: "/icons/draft.png",
   },
   {
     label: "Sent",
     route: "/mail",
-    imgUrl: "/icons/sent.svg",
+    imgUrl: "/icons/send.png",
   },
   {
     label: "Junk",
     route: "/mail",
-    imgUrl: "/icons/junk.svg",
+    imgUrl: "/icons/junk.png",
   },
   {
     label: "Trash",
     route: "/mail",
-    imgUrl: "/icons/trash.svg",
+    imgUrl: "/icons/trash.png",
   },
   {
     label: "Archieve",
     route: "/mail",
-    imgUrl: "/icons/archieve.svg",
+    imgUrl: "/icons/archive.png",
   },
   {
     label: "Social",
     route: "/mail",
-    imgUrl: "/icons/social.svg",
+    imgUrl: "/icons/social.png",
   },
   {
     label: "Updates",
     route: "/mail",
-    imgUrl: "/icons/update.svg",
+    imgUrl: "/icons/update.png",
   },
   {
     label: "Forums",
     route: "/mail",
-    imgUrl: "/icons/forum.svg",
+    imgUrl: "/icons/forum.png",
   },
   {
     label: "Shopping",
     route: "/mail",
-    imgUrl: "/icons/shoping.svg",
+    imgUrl: "/icons/shopping.png",
   },
   {
     label: "Promotion",
     route: "/mail",
-    imgUrl: "/icons/promotion.svg",
+    imgUrl: "/icons/archive.png",
   },
 ];
 

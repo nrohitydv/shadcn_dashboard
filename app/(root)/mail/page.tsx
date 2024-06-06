@@ -26,13 +26,18 @@ const MailPage: React.FC = () => {
         direction="horizontal"
         className="h-full w-full rounded-lg border shadow-lg"
       >
-        <ResizablePanel defaultSize={33} className="border-r">
+        <ResizablePanel
+          // defaultSize={33}
+          className="border-r"
+          minSize={15}
+          maxSize={22}
+        >
           <div className="flex h-full p-6">
             <NavMail />
           </div>
         </ResizablePanel>
         <ResizableHandle className="bg-gray-200" />
-        <ResizablePanel defaultSize={33} className="border-r">
+        <ResizablePanel defaultSize={33} className="border-r min-w-[500px]">
           <Tabs defaultValue="mail" className="w-full p-4">
             <div className="flex justify-between items-center mb-4 border-b rounded-md">
               <h1 className="text-xl font-semibold">Inbox</h1>
@@ -59,7 +64,7 @@ const MailPage: React.FC = () => {
           </Tabs>
         </ResizablePanel>
         <ResizableHandle className="bg-gray-200" />
-        <ResizablePanel defaultSize={34}>
+        <ResizablePanel defaultSize={34} minSize={15}>
           {selectedMail && <ThirdContainer mail={selectedMail} />}
         </ResizablePanel>
       </ResizablePanelGroup>

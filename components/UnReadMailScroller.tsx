@@ -14,11 +14,11 @@ const UnReadMailScroller = () => {
             >
               <div className="flex flex-col ml-4 items-start">
                 <span className="font-bold">{data.name}</span>
-                <span className="text-sm text-gray-600">{data.subject}</span>
-                <p className="text-sm text-gray-800">
-                  {data.text.substring(0, 100)}...
+                <span className="text-sm">{data.subject}</span>
+                <p className="text-sm text-start">
+                  {data.text.substring(0, 150)}...
                 </p>
-                <div className="flex">
+                <div className="flex gap-3">
                   {data.labels.map((label) => (
                     <Badge key={label} className="bg-2 text-1">
                       {label}

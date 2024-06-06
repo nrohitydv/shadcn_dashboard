@@ -1,4 +1,4 @@
-import { FaArchive } from "react-icons/fa";
+import { MdDeleteOutline } from "react-icons/md";
 import { MdDeleteForever, MdSnooze } from "react-icons/md";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { GoReply } from "react-icons/go";
@@ -31,7 +31,7 @@ const ThirdContainer: React.FC<Props> = ({ mail }) => {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Button>
-                    <FaArchive size={15} />
+                    <MdDeleteOutline size={17} />
                   </Button>
                 </TooltipTrigger>
                 <TooltipContent>
@@ -111,7 +111,7 @@ const ThirdContainer: React.FC<Props> = ({ mail }) => {
           </div>
         </TooltipProvider>
       </div>
-      <div className="p-4 text-white max-w-md mx-auto rounded-lg border-b ">
+      <div className="p-4 max-w-md mx-auto rounded-lg border-b ">
         <div className="flex items-center mb-4 border-b rounded-md">
           <div className="rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold">
             <Avatar>
@@ -126,12 +126,12 @@ const ThirdContainer: React.FC<Props> = ({ mail }) => {
           </div>
           <div className="ml-4">
             <div className="text-lg font-semibold">{mail.name}</div>
-            <div className="text-gray-400">{mail.subject}</div>
-            <div className="text-gray-400">{mail.date}</div>
-            <div className="text-gray-400">Reply-To: {mail.replyTo}</div>
+            <div className="">{mail.subject}</div>
+            <div className="">{mail.date}</div>
+            <div className="">Reply-To: {mail.replyTo}</div>
           </div>
         </div>
-        <div className="text-gray-400">{mail.text}</div>
+        <div className="">{mail.text}</div>
       </div>
       <div className="mt-10 mr-2 ml-2">
         <Textarea
@@ -151,7 +151,9 @@ const ThirdContainer: React.FC<Props> = ({ mail }) => {
           />
           Mute this thread
         </label>
-        <Button className="border m-2 hover:bg-1 text-1 bg-2">Send</Button>
+        <Button className="border m-2 cursor-pointer hover:bg-2 text-1 bg-2">
+          Send
+        </Button>
       </div>
     </main>
   );

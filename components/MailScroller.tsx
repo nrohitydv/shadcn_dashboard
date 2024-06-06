@@ -21,8 +21,10 @@ const MailScroller: React.FC<Props> = ({ mails, onSelectMail }) => {
             <div className="flex flex-col ml-4 items-start justify-start">
               <span className="font-bold">{data.name}</span>
               <span className="text-sm">{data.subject}</span>
-              <p className="text-sm">{data.text.substring(0, 100)}...</p>
-              <div className="flex">
+              <p className="text-sm text-start">
+                {data.text.substring(0, 150)}...
+              </p>
+              <div className="flex gap-3">
                 {data.labels.map((label) => (
                   <Badge key={label} className="bg-2 text-1 hover:bg-2">
                     {label}
